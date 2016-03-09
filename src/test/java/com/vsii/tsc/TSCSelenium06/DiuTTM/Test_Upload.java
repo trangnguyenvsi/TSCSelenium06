@@ -1,4 +1,4 @@
-package com.vsii.tsc.TSCSelenium06.diuttm;
+package com.vsii.tsc.TSCSelenium06.DiuTTM;
 
 import java.awt.AWTException;
 import java.util.concurrent.TimeUnit;
@@ -9,6 +9,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import PagePatory.ContactUs;
+import PagePatory.Homepage;
 
 public class Test_Upload
 {
@@ -28,7 +31,7 @@ public class Test_Upload
     public void UploadSucc() throws AWTException{
        ContactUs ct = new ContactUs(driver);
        Homepage hp = new Homepage(driver);
-      hp.clickCtusBtn();
+       hp.clickCtusBtn();
         ct.sendEmail("Customer service", "minhdiu.92@gmail.com","123", "Thank you so much");               
         String act= driver.findElement(By.xpath("//*[@id='center_column']/p")).getText();
         Assert.assertEquals(act,"Your message has been successfully sent to our team.");

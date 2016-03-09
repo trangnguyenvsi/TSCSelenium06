@@ -1,4 +1,4 @@
-package com.vsii.tsc.TSCSelenium06.diuttm;
+package com.vsii.tsc.TSCSelenium06.DiuTTM;
 
 import java.io.FileInputStream;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.vsii.tsc.TSCSelenium06.diuttm;
+package PagePatory;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -47,6 +47,10 @@ public class Homepage
     public void clickCtusBtn()
     {
                 this.contactUs.click();        
+    }
+    public void clickSignInBtn()
+    {
+                this.SignIn.click();        
     }
     public void setNewLetter(String Strletter)
     {

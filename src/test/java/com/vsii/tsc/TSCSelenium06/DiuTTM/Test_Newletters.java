@@ -1,4 +1,4 @@
-package com.vsii.tsc.TSCSelenium06.diuttm;
+package com.vsii.tsc.TSCSelenium06.DiuTTM;
 
 import java.awt.AWTException;
 import java.util.concurrent.TimeUnit;
@@ -9,6 +9,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import PagePatory.Homepage;
 
 public class Test_Newletters
 {

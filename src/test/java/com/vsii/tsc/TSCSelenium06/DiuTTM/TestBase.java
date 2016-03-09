@@ -1,4 +1,4 @@
-package com.vsii.tsc.TSCSelenium06.diuttm;
+package com.vsii.tsc.TSCSelenium06.DiuTTM;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;

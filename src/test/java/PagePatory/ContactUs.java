@@ -1,4 +1,4 @@
-package com.vsii.tsc.TSCSelenium06.diuttm;
+package PagePatory;
 
 import java.awt.AWTException;
 import java.awt.Robot;

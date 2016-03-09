@@ -1,4 +1,4 @@
-package com.vsii.tsc.TSCSelenium06.diuttm;
+package com.vsii.tsc.TSCSelenium06.DiuTTM;
 
 import java.util.concurrent.TimeUnit;
 
@@ -9,7 +9,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Search
+import PagePatory.Homepage;
+
+public class Test_Search
 {     
     WebDriver driver;
     @BeforeClass
