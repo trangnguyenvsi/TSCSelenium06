@@ -1,4 +1,4 @@
-package PagePatory;
+package com.vsii.tsc.TSCSelenium06.DiuTTM.PagePatory;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -36,6 +36,10 @@ public class Homepage
         PageFactory.initElements(driver, this);
  
     }
+    public void clickSignInBtn()
+    {
+                this.SignIn.click();        
+    }
     public void SetDataSearch(String StrSearchTxt)
     {
                 this.searchBox.sendKeys(StrSearchTxt);        
@@ -48,11 +52,7 @@ public class Homepage
     {
                 this.contactUs.click();        
     }
-    public void clickSignInBtn()
-    {
-                this.SignIn.click();        
-    }
-    public void setNewLetter(String Strletter)
+       public void setNewLetter(String Strletter)
     {
                 this.newsletterTxt.sendKeys(Strletter);        
     }
@@ -65,7 +65,5 @@ public class Homepage
        this.setNewLetter(Strletter);
        Robot robot = new Robot();
        robot.keyPress(KeyEvent.VK_ENTER);}
-   
-   
    
 }

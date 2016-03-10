@@ -1,4 +1,4 @@
-package PagePatory;
+package com.vsii.tsc.TSCSelenium06.DiuTTM.PagePatory;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -14,8 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class ContactUs
 {  
-
-    
+ 
     WebDriver driver;
     @FindBy(id="email")
     WebElement email_contact;

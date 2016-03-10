@@ -1,4 +1,4 @@
-package com.vsii.tsc.TSCSelenium06.DiuTTM;
+package com.vsii.tsc.TSCSelenium06.DiuTTM.Test;
 
 import java.awt.AWTException;
 import java.util.concurrent.TimeUnit;
@@ -13,10 +13,10 @@ import org.testng.annotations.Test;
 import PagePatory.ContactUs;
 import PagePatory.Homepage;
 
-public class Test_Upload
+public class Test_Contus
 {
     WebDriver driver;
- TestBase tb= new TestBase();
+// TestBase tb= new TestBase();
 //    @BeforeClass
 //    
 //    public void setup(){

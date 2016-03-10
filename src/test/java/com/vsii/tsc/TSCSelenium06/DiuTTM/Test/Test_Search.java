@@ -1,4 +1,4 @@
-package com.vsii.tsc.TSCSelenium06.DiuTTM;
+package com.vsii.tsc.TSCSelenium06.DiuTTM.Test;
 
 import java.util.concurrent.TimeUnit;
 

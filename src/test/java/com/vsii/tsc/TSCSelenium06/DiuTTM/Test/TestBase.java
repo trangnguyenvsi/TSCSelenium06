@@ -1,12 +1,11 @@
-package com.vsii.tsc.TSCSelenium06.DiuTTM;
+package com.vsii.tsc.TSCSelenium06.DiuTTM.Test;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import java.io.IOException;
-
-
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,7 +13,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class TestBase {
-	protected Properties p;
+	public static Object hp;
+    protected Properties p;
 	protected WebDriver driver;
 	protected String urlBase;
 
@@ -44,6 +44,8 @@ public class TestBase {
 		}
 		driver.get(urlBase);
 	}
+	
+   
 	@AfterMethod
     public void tearDown() throws Exception {
 		driver.quit();
