@@ -10,7 +10,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import PagePatory.REgis_page;
+import com.vsii.tsc.TSCSelenium06.DiuTTM.PagePatory.REgis_page;
 
 public class Test_register
 {

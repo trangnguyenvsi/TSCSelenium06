@@ -17,7 +17,13 @@ WebElement Password;
 @FindBy(name="SubmitLogin")
 WebElement Login;
 
+@FindBy(xpath=".//*[@id='header']/div[2]/div/div/nav/div[1]/a")
+WebElement SignIn;
 
+public void clickSignInBtn()
+{
+            this.SignIn.click();        
+}
 public Login_page(WebDriver driver)
 {
 this.driver=driver; 
@@ -38,6 +44,7 @@ public void clickLoginBtn(){
 }
 
 public void login(String StrEmail, String StrPass){
+    this.clickSignInBtn();
     this.setEmail(StrEmail);
     this.setPass(StrPass);
     this.clickLoginBtn();

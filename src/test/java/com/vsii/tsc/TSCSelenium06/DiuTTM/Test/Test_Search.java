@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import PagePatory.Homepage;
+import com.vsii.tsc.TSCSelenium06.DiuTTM.PagePatory.Homepage;
 
 public class Test_Search
 {     

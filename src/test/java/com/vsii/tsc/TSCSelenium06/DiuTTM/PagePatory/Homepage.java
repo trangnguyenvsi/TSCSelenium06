@@ -17,10 +17,7 @@ public class Homepage
     
     @FindBy(id="contact-link")
     WebElement contactUs;
-    
-    @FindBy(xpath=".//*[@id='header']/div[2]/div/div/nav/div[1]/a")
-    WebElement SignIn;
-    
+ 
     @FindBy(xpath=".//*[@id='searchbox']/button")
     WebElement searchBtn;
     
@@ -36,10 +33,7 @@ public class Homepage
         PageFactory.initElements(driver, this);
  
     }
-    public void clickSignInBtn()
-    {
-                this.SignIn.click();        
-    }
+  
     public void SetDataSearch(String StrSearchTxt)
     {
                 this.searchBox.sendKeys(StrSearchTxt);        

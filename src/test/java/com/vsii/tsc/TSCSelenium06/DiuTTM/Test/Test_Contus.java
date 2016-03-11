@@ -10,8 +10,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import PagePatory.ContactUs;
-import PagePatory.Homepage;
+import com.vsii.tsc.TSCSelenium06.DiuTTM.PagePatory.ContactUs;
+import com.vsii.tsc.TSCSelenium06.DiuTTM.PagePatory.Homepage;
 
 public class Test_Contus
 {
