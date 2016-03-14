@@ -1,46 +1,250 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="2" total="9" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="344" started-at="2016-03-10T07:40:43Z" finished-at="2016-03-10T07:40:44Z">
+  <suite name="Suite" duration-ms="145950" started-at="2016-03-14T14:02:11Z" finished-at="2016-03-14T14:04:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="344" started-at="2016-03-10T07:40:43Z" finished-at="2016-03-10T07:40:44Z">
-      <class name="com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin">
-        <test-method status="PASS" signature="getBrowser()[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@df4efb]" name="getBrowser" is-config="true" duration-ms="10" started-at="2016-03-10T14:40:43Z" finished-at="2016-03-10T14:40:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getBrowser -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@df4efb]" name="beforeTest" is-config="true" duration-ms="0" started-at="2016-03-10T14:40:43Z" finished-at="2016-03-10T14:40:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="loginInvalid(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@df4efb]" name="loginInvalid" duration-ms="10" started-at="2016-03-10T14:40:44Z" data-provider="login" finished-at="2016-03-10T14:40:44Z">
+    <test name="Login" duration-ms="31378" started-at="2016-03-14T14:02:11Z" finished-at="2016-03-14T14:02:42Z">
+      <class name="com.vsii.tsc.TSCSelenium06.tranglt.Test.Login">
+        <test-method status="PASS" signature="LoginFail(java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium06.tranglt.Test.Login@f82f98]" name="LoginFail" duration-ms="6681" started-at="2016-03-14T21:02:13Z" data-provider="LoginFail" finished-at="2016-03-14T21:02:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Login - My Store]]>
+                <![CDATA[abc]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[quyentx]]>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFail -->
+        <test-method status="PASS" signature="LoginFail(java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium06.tranglt.Test.Login@f82f98]" name="LoginFail" duration-ms="4556" started-at="2016-03-14T21:02:20Z" data-provider="LoginFail" finished-at="2016-03-14T21:02:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFail -->
+        <test-method status="PASS" signature="LoginFail(java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium06.tranglt.Test.Login@f82f98]" name="LoginFail" duration-ms="4648" started-at="2016-03-14T21:02:25Z" data-provider="LoginFail" finished-at="2016-03-14T21:02:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aa2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFail -->
+        <test-method status="PASS" signature="LoginFail(java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium06.tranglt.Test.Login@f82f98]" name="LoginFail" duration-ms="4685" started-at="2016-03-14T21:02:29Z" data-provider="LoginFail" finished-at="2016-03-14T21:02:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aa2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[34354]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFail -->
+        <test-method status="PASS" signature="LoginSuccess(java.lang.String, java.lang.String)[pri:1, instance:com.vsii.tsc.TSCSelenium06.tranglt.Test.Login@f82f98]" name="LoginSuccess" duration-ms="8305" started-at="2016-03-14T21:02:34Z" data-provider="LoginSucc" finished-at="2016-03-14T21:02:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hehehe@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginSuccess -->
+      </class> <!-- com.vsii.tsc.TSCSelenium06.tranglt.Test.Login -->
+    </test> <!-- Login -->
+    <test name="Register" duration-ms="67528" started-at="2016-03-14T14:02:43Z" finished-at="2016-03-14T14:03:50Z">
+      <class name="com.vsii.tsc.TSCSelenium06.tranglt.Test.Register">
+        <test-method status="FAIL" signature="RegisterSuccess(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium06.tranglt.Test.Register@82d64]" name="RegisterSuccess" duration-ms="33550" started-at="2016-03-14T21:02:43Z" data-provider="dataRegisterSuccess" finished-at="2016-03-14T21:03:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hehehe3@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trang]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Password1]]>
+                <![CDATA[Le]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1989]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[VSII]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Ha Noi]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Ninh Binh]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Ha Noi]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[84841]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[21]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[Other]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[1234578]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[165688888]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[heheh]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"id","selector":"id_gender1"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'WIN-R1JBAO1CNPS', ip: '172.20.43.245', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: driver.version: unknown
+Command duration or timeout: 30.43 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'TrangLe-PC', ip: '192.168.1.110', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=33.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=ec60f44b6fc541f280b92b4c7888500f, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ec60f44b6fc541f280b92b4c7888500f
+*** Element info: {Using=id, value=id_gender1}]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin.loginInvalid(CheckLogin.java:19)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"id_gender1"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'WIN-R1JBAO1CNPS', ip: '172.20.43.245', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: driver.version: unknown
+Command duration or timeout: 30.43 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'TrangLe-PC', ip: '192.168.1.110', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=33.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=ec60f44b6fc541f280b92b4c7888500f, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ec60f44b6fc541f280b92b4c7888500f
+*** Element info: {Using=id, value=id_gender1}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.vsii.tsc.TSCSelenium06.tranglt.Pages.Authentication.setId_gender1(Authentication.java:125)
+	at com.vsii.tsc.TSCSelenium06.tranglt.Pages.Authentication.Register(Authentication.java:226)
+	at com.vsii.tsc.TSCSelenium06.tranglt.Test.Register.RegisterSuccess(Register.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
@@ -61,30 +265,188 @@
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"id_gender1"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'WIN-R1JBAO1CNPS', ip: '172.20.43.245', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'TrangLe-PC', ip: '192.168.1.110', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous3361288907955271206webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous3361288907955271206webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginInvalid -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@df4efb]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-03-10T14:40:44Z" finished-at="2016-03-10T14:40:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="FAIL" signature="afterSuite()[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@df4efb]" name="afterSuite" is-config="true" duration-ms="0" started-at="2016-03-10T14:40:44Z" finished-at="2016-03-10T14:40:44Z">
-          <exception class="java.lang.NullPointerException">
+        </test-method> <!-- RegisterSuccess -->
+        <test-method status="FAIL" signature="RegisterFail(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.vsii.tsc.TSCSelenium06.tranglt.Test.Register@82d64]" name="RegisterFail" duration-ms="33630" started-at="2016-03-14T21:03:17Z" data-provider="dataRegisterFail" finished-at="2016-03-14T21:03:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hehehe1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trang]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Le]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1989]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[VSII]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Ha Noi]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Ninh Binh]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Ha Noi]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[84841]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[21]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[Other]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[1234578]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[165688888]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[heheh]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"id","selector":"id_gender1"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'WIN-R1JBAO1CNPS', ip: '172.20.43.245', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: driver.version: unknown
+Command duration or timeout: 30.37 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'TrangLe-PC', ip: '192.168.1.110', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=33.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=ec60f44b6fc541f280b92b4c7888500f, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ec60f44b6fc541f280b92b4c7888500f
+*** Element info: {Using=id, value=id_gender1}]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.vsii.tsc.TSCSelenium06.quyentx.tests.TestBase.afterSuite(TestBase.java:64)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"id_gender1"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'WIN-R1JBAO1CNPS', ip: '172.20.43.245', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: driver.version: unknown
+Command duration or timeout: 30.37 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'TrangLe-PC', ip: '192.168.1.110', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=33.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=ec60f44b6fc541f280b92b4c7888500f, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ec60f44b6fc541f280b92b4c7888500f
+*** Element info: {Using=id, value=id_gender1}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.vsii.tsc.TSCSelenium06.tranglt.Pages.Authentication.setId_gender1(Authentication.java:125)
+	at com.vsii.tsc.TSCSelenium06.tranglt.Pages.Authentication.Register(Authentication.java:226)
+	at com.vsii.tsc.TSCSelenium06.tranglt.Test.Register.RegisterFail(Register.java:45)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:329)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
@@ -94,13 +456,44 @@
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"id_gender1"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'WIN-R1JBAO1CNPS', ip: '172.20.43.245', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'TrangLe-PC', ip: '192.168.1.110', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous3361288907955271206webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous3361288907955271206webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- RegisterFail -->
+      </class> <!-- com.vsii.tsc.TSCSelenium06.tranglt.Test.Register -->
+    </test> <!-- Register -->
+    <test name="AddToCart" duration-ms="46556" started-at="2016-03-14T14:03:50Z" finished-at="2016-03-14T14:04:37Z">
+      <class name="com.vsii.tsc.TSCSelenium06.tranglt.Test.AddToCart">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.vsii.tsc.TSCSelenium06.tranglt.Test.AddToCart@4a765]" name="beforeClass" is-config="true" duration-ms="16925" started-at="2016-03-14T21:01:54Z" finished-at="2016-03-14T21:02:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="checkAddToCart()[pri:0, instance:com.vsii.tsc.TSCSelenium06.tranglt.Test.AddToCart@4a765]" name="checkAddToCart" duration-ms="14839" started-at="2016-03-14T21:03:50Z" finished-at="2016-03-14T21:04:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddToCart -->
+        <test-method status="PASS" signature="checkPriceTotal()[pri:1, instance:com.vsii.tsc.TSCSelenium06.tranglt.Test.AddToCart@4a765]" name="checkPriceTotal" duration-ms="31711" started-at="2016-03-14T21:04:05Z" finished-at="2016-03-14T21:04:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPriceTotal -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.vsii.tsc.TSCSelenium06.tranglt.Test.AddToCart@4a765]" name="tearDown" is-config="true" duration-ms="11" started-at="2016-03-14T21:04:37Z" finished-at="2016-03-14T21:04:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.vsii.tsc.TSCSelenium06.tranglt.Test.AddToCart -->
+    </test> <!-- AddToCart -->
+  </suite> <!-- Suite -->
 </testng-results>
