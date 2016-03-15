@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import com.vsii.tsc.TSCSelenium06.quyentx.Pages.RegisterPage;
 
 public class CheckRegister extends TestBase {
-	TestBase tb=new TestBase();
+	
 	RegisterPage reg = new RegisterPage();
 	
 	/* 

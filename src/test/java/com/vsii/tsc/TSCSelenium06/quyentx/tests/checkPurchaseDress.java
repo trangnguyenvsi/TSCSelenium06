@@ -9,7 +9,6 @@ import com.vsii.tsc.TSCSelenium06.quyentx.Pages.LoginPage;
 import com.vsii.tsc.TSCSelenium06.quyentx.Pages.PurchaseDresses;
 
 public class checkPurchaseDress extends TestBase{
-	TestBase tb=new TestBase();
 	LoginPage login = new LoginPage();
 	PurchaseDresses pd = new PurchaseDresses();
 	

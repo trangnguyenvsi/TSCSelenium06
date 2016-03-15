@@ -8,8 +8,7 @@ import com.vsii.tsc.TSCSelenium06.quyentx.Pages.LoginPage;
 import com.vsii.tsc.TSCSelenium06.quyentx.tests.TestBase;
 
 public class CheckLogin extends TestBase{
-	
-	TestBase tb=new TestBase();
+
 	LoginPage login = new LoginPage();
 	
 	/* 
@@ -41,10 +40,8 @@ public class CheckLogin extends TestBase{
 		login.login(expTitle, email, password);
 		Assert.assertEquals(actualTitle, expTitle);
 	}
-	
 	@AfterTest
 	public void afterTest(){
 		System.out.println("Test login successfully.");
 	}
-	
 }
