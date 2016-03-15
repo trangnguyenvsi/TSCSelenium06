@@ -9,24 +9,6 @@ public class PurchaseDresses {
 
 	WebDriver driver;
 	
-//	@FindBy(xpath = "html/body/div[1]/div[1]/header/div[3]/div/div/div[6]/ul/li[1]/ul")
-//	WebElement  Menuwomen;
-//	
-//	@FindBy(id = "layered_category_8")
-//	WebElement Category;	
-//	
-//	@FindBy(id = "layered_id_attribute_group_13")
-//	WebElement OrangeColor;
-//	
-//	@FindBy(id ="layered_id_feature_1")
-//	WebElement PolyComposition;
-//	
-//	@FindBy(id = "layered_id_feature_13")
-//	WebElement StyleGirly;
-//	
-//	@FindBy(id = "layered_id_feature_19")
-//	WebElement PropertiesShort;
-	
 	@FindBy(id = "selectProductSort")
 	WebElement SortBy;
 	
@@ -45,19 +27,19 @@ public class PurchaseDresses {
 	@FindBy(linkText = "Proceed to checkout")
 	WebElement checkOut2;
 	
-	@FindBy(name = "processAddress")
+	@FindBy(xpath = "html/body/div[1]/div[2]/div/div[3]/div/form/p/button")
 	WebElement processAddress;
 	
 	@FindBy(id = "cgv")
 	WebElement termOfService;
 	
-	@FindBy(name = "processCarrier")
+	@FindBy(xpath = "html/body/div[1]/div[2]/div/div[3]/div/div/form/p/button")
 	WebElement processCarrier;
 	
-	@FindBy(linkText = "Pay by check.")
+	@FindBy(xpath = "html/body/div[1]/div[2]/div/div[3]/div/div/div[3]/div[2]/div/p/a")
 	WebElement payByCheck;
 	
-	@FindBy(linkText = "processAddress")
+	@FindBy(xpath = "html/body/div[1]/div[2]/div/div[3]/div/form/p/button")
 	WebElement confirmPayment;
 	
 	public void setDriver(WebDriver driver) {
@@ -67,12 +49,6 @@ public class PurchaseDresses {
 	
 	//Executing purchase
 	public void purchaseDress(){
-//		clickMenuWomen();
-//		clickCategory();
-//		clickColor();
-//		clickComposition();
-//		clickStyle();
-//		clickProperty();
 		clickSort();
 		clickList();
 		chooseDress();
@@ -87,30 +63,6 @@ public class PurchaseDresses {
 	}
 	
 	//List of actions
-//	public void clickMenuWomen(){
-//	    this.Menuwomen.click();
-//	    }
-	
-//	public void clickCategory(){
-//	    this.Category.click();
-//	    }
-//	
-//	public void clickColor(){
-//	    this.OrangeColor.click();
-//	    }
-//	
-//	public void clickComposition(){
-//	    this.PolyComposition.click();
-//	    }
-//	
-//	public void clickStyle(){
-//	    this.StyleGirly.click();
-//	    }
-//	
-//	public void clickProperty(){
-//	    this.PropertiesShort.click();
-//	    }
-	
 	public void clickSort(){
 	    this.SortBy.click();
 	    }

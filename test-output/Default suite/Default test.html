@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 15 16:52:09 ICT 2016</td>
+<td>Started on:</td><td>Tue Mar 15 16:59:10 ICT 2016</td>
 </tr>
-<tr><td>Total time:</td><td>67 seconds (67866 ms)</td>
+<tr><td>Total time:</td><td>71 seconds (71642 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.vsii.tsc.TSCSelenium06.quyentx.tests.checkPurchaseDress.purchaseDressValid()'><b>purchaseDressValid</b><br>Test class: com.vsii.tsc.TSCSelenium06.quyentx.tests.checkPurchaseDress</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Pay by check&quot;}
-Command duration or timeout: 30.50 seconds
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;processAddress&quot;}
+Command duration or timeout: 31.34 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
 System info: host: &apos;quyentx-w7&apos;, ip: &apos;169.254.145.253&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_74&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 52c79c93-2ff0-41f3-a908-e989aa3f70a6
-*** Element info: {Using=link text, value=Pay by check}
+Session ID: 6553a8bd-4319-4866-adac-8fcfa86c6daa
+*** Element info: {Using=link text, value=processAddress}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -99,8 +99,8 @@ Session ID: 52c79c93-2ff0-41f3-a908-e989aa3f70a6
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.vsii.tsc.TSCSelenium06.quyentx.Pages.PurchaseDresses.payByChek(PurchaseDresses.java:151)
-	at com.vsii.tsc.TSCSelenium06.quyentx.Pages.PurchaseDresses.purchaseDress(PurchaseDresses.java:85)
+	at com.vsii.tsc.TSCSelenium06.quyentx.Pages.PurchaseDresses.confirmPayment(PurchaseDresses.java:155)
+	at com.vsii.tsc.TSCSelenium06.quyentx.Pages.PurchaseDresses.purchaseDress(PurchaseDresses.java:86)
 	at com.vsii.tsc.TSCSelenium06.quyentx.tests.checkPurchaseDress.purchaseDressValid(checkPurchaseDress.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -126,23 +126,23 @@ Session ID: 52c79c93-2ff0-41f3-a908-e989aa3f70a6
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Pay by check&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;processAddress&quot;}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
 System info: host: &apos;quyentx-w7&apos;, ip: &apos;169.254.145.253&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_74&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous4802708224085001762webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous4802708224085001762webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-</pre></div><a href='#' onClick='toggleBox("stack-trace11067669", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace11067669'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Pay by check&quot;}
-Command duration or timeout: 30.50 seconds
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous5462916229613029687webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous5462916229613029687webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+</pre></div><a href='#' onClick='toggleBox("stack-trace30314457", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace30314457'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;processAddress&quot;}
+Command duration or timeout: 31.34 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
 System info: host: &apos;quyentx-w7&apos;, ip: &apos;169.254.145.253&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_74&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 52c79c93-2ff0-41f3-a908-e989aa3f70a6
-*** Element info: {Using=link text, value=Pay by check}
+Session ID: 6553a8bd-4319-4866-adac-8fcfa86c6daa
+*** Element info: {Using=link text, value=processAddress}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -157,8 +157,8 @@ Session ID: 52c79c93-2ff0-41f3-a908-e989aa3f70a6
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.vsii.tsc.TSCSelenium06.quyentx.Pages.PurchaseDresses.payByChek(PurchaseDresses.java:151)
-	at com.vsii.tsc.TSCSelenium06.quyentx.Pages.PurchaseDresses.purchaseDress(PurchaseDresses.java:85)
+	at com.vsii.tsc.TSCSelenium06.quyentx.Pages.PurchaseDresses.confirmPayment(PurchaseDresses.java:155)
+	at com.vsii.tsc.TSCSelenium06.quyentx.Pages.PurchaseDresses.purchaseDress(PurchaseDresses.java:86)
 	at com.vsii.tsc.TSCSelenium06.quyentx.tests.checkPurchaseDress.purchaseDressValid(checkPurchaseDress.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -184,16 +184,16 @@ Session ID: 52c79c93-2ff0-41f3-a908-e989aa3f70a6
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Pay by check&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;processAddress&quot;}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
 System info: host: &apos;quyentx-w7&apos;, ip: &apos;169.254.145.253&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_74&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous4802708224085001762webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous4802708224085001762webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous5462916229613029687webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous5462916229613029687webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 </pre></div></td>
-<td>47</td>
-<td>com.vsii.tsc.TSCSelenium06.quyentx.tests.checkPurchaseDress@16e8792</td></tr>
+<td>50</td>
+<td>com.vsii.tsc.TSCSelenium06.quyentx.tests.checkPurchaseDress@16532d6</td></tr>
 </table><p>
 </body>
 </html>
