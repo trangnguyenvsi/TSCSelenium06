@@ -19,7 +19,7 @@ public class checkPurchaseDress extends TestBase{
 		pd.setDriver(driver);
 		pd.purchaseDress();
 		Assert.assertEquals(driver.findElement(By.xpath("html/body/div[1]/div[2]/div/div[3]/div/h1")).getText(),
-				"Order confirmation");
+				"ORDER CONFIRMATION");
 	}
 	
 	@BeforeTest
