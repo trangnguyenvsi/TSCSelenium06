@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7952" started-at="2016-03-15T10:38:37Z" finished-at="2016-03-15T10:38:45Z">
+  <suite name="Default suite" duration-ms="7019" started-at="2016-03-15T10:48:43Z" finished-at="2016-03-15T10:48:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7952" started-at="2016-03-15T10:38:37Z" finished-at="2016-03-15T10:38:45Z">
+    <test name="Default test" duration-ms="7019" started-at="2016-03-15T10:48:43Z" finished-at="2016-03-15T10:48:51Z">
       <class name="com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@2d6e8792]" name="beforeClass" is-config="true" duration-ms="12912" started-at="2016-03-15T17:38:24Z" finished-at="2016-03-15T17:38:37Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@2d6e8792]" name="beforeClass" is-config="true" duration-ms="10902" started-at="2016-03-15T17:48:33Z" finished-at="2016-03-15T17:48:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="loginInvalid(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@2d6e8792]" name="loginInvalid" duration-ms="7314" started-at="2016-03-15T17:38:37Z" data-provider="loginInvalid" finished-at="2016-03-15T17:38:45Z">
+        <test-method status="PASS" signature="loginInvalid(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@2d6e8792]" name="loginInvalid" duration-ms="6384" started-at="2016-03-15T17:48:44Z" data-provider="loginInvalid" finished-at="2016-03-15T17:48:50Z">
           <params>
             <param index="0">
               <value>
@@ -32,11 +32,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginInvalid -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@2d6e8792]" name="afterTest" is-config="true" duration-ms="1" started-at="2016-03-15T17:38:45Z" finished-at="2016-03-15T17:38:45Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@2d6e8792]" name="afterTest" is-config="true" duration-ms="1" started-at="2016-03-15T17:48:51Z" finished-at="2016-03-15T17:48:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@2d6e8792]" name="afterSuite" is-config="true" duration-ms="294" started-at="2016-03-15T17:38:45Z" finished-at="2016-03-15T17:38:45Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@2d6e8792]" name="afterSuite" is-config="true" duration-ms="325" started-at="2016-03-15T17:48:51Z" finished-at="2016-03-15T17:48:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
