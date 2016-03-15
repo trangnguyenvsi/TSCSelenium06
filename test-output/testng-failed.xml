@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.vsii.tsc.TSCSelenium06.tranglt.ReadConfig.ExtentReporterNG"/>
-  </listeners>
-  <test name="Register(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.vsii.tsc.TSCSelenium06.tranglt.Test.Register">
+      <class name="com.vsii.tsc.TSCSelenium06.quyentx.tests.checkPurchaseDress">
         <methods>
-          <include name="RegisterFail" invocation-numbers="0"/>
-          <include name="RegisterSuccess" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.vsii.tsc.TSCSelenium06.tranglt.Test.Register -->
-      <class name="com.vsii.tsc.TSCSelenium06.tranglt.Test.AddToCart">
-        <methods>
-          <include name="tearDown"/>
+          <include name="afterSuite"/>
+          <include name="preTest"/>
+          <include name="purchaseDressValid"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.vsii.tsc.TSCSelenium06.tranglt.Test.AddToCart -->
+      </class> <!-- com.vsii.tsc.TSCSelenium06.quyentx.tests.checkPurchaseDress -->
     </classes>
-  </test> <!-- Register(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

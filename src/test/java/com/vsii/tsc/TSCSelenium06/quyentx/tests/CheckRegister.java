@@ -1,44 +1,64 @@
 package com.vsii.tsc.TSCSelenium06.quyentx.tests;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import com.vsii.tsc.TSCSelenium06.quyentx.Pages.RegisterPage;
 
-public class CheckRegister extends RegisterPage {
-
-	@BeforeTest
-	public void beforeTest() {
-		driver.get(TestBase.baseURL + "controller=authentication&back=my-account");
-	}
-
-	@Test(dataProvider = "register")
-	public void registerInvalid(String expTitle, String email1, String cusFName, String cusLName, String mail2,
+public class CheckRegister extends TestBase {
+	TestBase tb=new TestBase();
+	RegisterPage reg = new RegisterPage();
+	
+	/* 
+	Case 1: Register with invalid credentials
+	Asserts test result by comparing ExpTitle and ActualTitle
+	Expected title:  "Login - My Store" defined in TestData 
+	*/
+	@Test(dataProvider = "registerInvalid")
+	public void registerInvalid (String expTitle, String email1, String cusFName, String cusLName, String mail2,
 			String pwd, String date, String mon, String yr, String recFName, String recLName, String recCom,
 			String recAddr1, String recAddr2, String recCity, String recPcode, String recCountry, String recInfo,
 			String recPhone1, String recPhone2, String recAlias) {
-
+		
+		driver.get(baseURL);
+		driver.findElement(By.linkText("Sign in")).click();
+		
 		String actualTitle = "";
 		actualTitle = driver.getTitle();
-
-		register(email1, cusFName, cusLName, mail2, pwd, date, mon, yr, recFName, recLName, recCom, recAddr1, recAddr2,
+		
+		reg.setDriver(driver);
+		reg.register(expTitle, email1, cusFName, cusLName, mail2, pwd, date, mon, yr, recFName, recLName, recCom, recAddr1, recAddr2,
 				recCity, recPcode, recCountry, recInfo, recPhone1, recPhone2, recAlias);
-
 		Assert.assertEquals(actualTitle, expTitle);
 	}
 
+
+	/* 
+	Case 2: Register with valid credentials
+	Asserts test result by comparing ExpTitle and ActualTitle
+	Expected title:  "My account - My Store" defined in TestData 
+	*/
+	@Test(dataProvider = "registerValid")
+	public void registerValid (String expTitle, String email1, String cusFName, String cusLName, String mail2,
+			String pwd, String date, String mon, String yr, String recFName, String recLName, String recCom,
+			String recAddr1, String recAddr2, String recCity, String recPcode, String recCountry, String recInfo,
+			String recPhone1, String recPhone2, String recAlias) {
+		
+		driver.get(baseURL);
+		driver.findElement(By.linkText("Sign in")).click();
+		
+		String actualTitle = "";
+		actualTitle = driver.getTitle();
+		reg.setDriver(driver);
+		
+		reg.register(expTitle, email1, cusFName, cusLName, mail2, pwd, date, mon, yr, recFName, recLName, recCom, recAddr1, recAddr2,
+				recCity, recPcode, recCountry, recInfo, recPhone1, recPhone2, recAlias);
+		Assert.assertEquals(actualTitle, expTitle);
+	}
+	
 	@AfterTest
 	public void afterTest() {
 		System.out.println("Test register successfully.");
 	}
-
-	@DataProvider(name = "register")
-	public Object[][] regData() {
-		Object[][] arrayObject = ReadData.getExcelData("./sources/TestData.xls", "Register");
-		return arrayObject;
-	}
-
 }

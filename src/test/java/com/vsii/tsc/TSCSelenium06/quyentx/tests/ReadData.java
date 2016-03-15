@@ -32,7 +32,6 @@ public class ReadData {
 					arrayExcelData[i - 1][j] = cell.getStringCellValue();
 
 				}
-
 			}
 			wb.close();
 		} catch (FileNotFoundException e) {

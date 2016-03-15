@@ -1,49 +1,55 @@
 package com.vsii.tsc.TSCSelenium06.quyentx.Pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.DataProvider;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-import com.vsii.tsc.TSCSelenium06.quyentx.tests.ReadData;
-import com.vsii.tsc.TSCSelenium06.quyentx.tests.TestBase;
-
-public class LoginPage extends TestBase{
+public class LoginPage {
 	
-	By userEmail = By.name("email");
+	WebDriver driver;
+	
+	@FindBy(id = "email")
+	WebElement userEmail;
 
-	By userPwd = By.name("passwd");
+	@FindBy(name = "passwd")
+	WebElement userPwd;
 	 
-	By loginBtn =By.name("SubmitLogin");
+	@FindBy(name = "SubmitLogin")
+	WebElement loginBtn;
 	 
-	public void Login(WebDriver driver){
-	    	 
-	        this.driver = driver;
-	 
+	public void setDriver(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
-	 
-	public void setUserEmail(String strUserName){
-		driver.findElement(userEmail).sendKeys(strUserName);
+	
+	public void setUserEmail(String e){
+		this.userEmail.sendKeys(e);
 	    }
 	 
-	public void setUserPwd(String strPassword){
-        driver.findElement(userPwd).sendKeys(strPassword);
+	public void setUserPwd(String p){
+        this.userPwd.sendKeys(p);
 	    }
 	 
 	public void clickLoginBtn(){
-	    driver.findElement(loginBtn).click();
+	    this.loginBtn.click();
 	    }
 	
-	public void login(String StrEmail, String StrPass){
+	public void login(String expTitle, String email, String password){
 		
-		this.setUserEmail(StrEmail);
-		this.setUserPwd(StrPass);
-		this.clickLoginBtn();
+		setUserEmail(email);
+		setUserPwd(password);
+		clickLoginBtn();
 	}
 	
-	@DataProvider(name = "login")
-	public Object[][] loginData() {
-		Object[][] arrayObject = ReadData.getExcelData("./sources/TestData.xls", "Login");
-		return arrayObject;
+	public void login(){
+		String e = "quyentx.test@gmail.com";
+		String p = "testP@ss";
+		setUserEmail(e);
+		setUserPwd(p);
+		clickLoginBtn();
 	}
+	
+
 
 }

@@ -1,183 +1,245 @@
 package com.vsii.tsc.TSCSelenium06.quyentx.Pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import com.vsii.tsc.TSCSelenium06.quyentx.tests.TestBase;
 
-public class RegisterPage extends TestBase {
+public class RegisterPage {
+	
+	WebDriver driver;
+	
+	@FindBy(name = "email_create")
+	WebElement email3;
+	
+	@FindBy(name = "SubmitCreate")
+	WebElement emailSubmit;
+	
+	@FindBy(id = "id_gender1")
+	WebElement gender1;
+	
+	@FindBy(id = "id_gender2")
+	WebElement gender2;
+	
+	@FindBy(id = "customer_firstname")
+	WebElement customerFName;
+	
+	@FindBy(id = "customer_lastname")
+	WebElement customerLName;
+	
+	@FindBy(name = "email")
+	WebElement email2;
+	
+	@FindBy(id = "passwd")
+	WebElement passwd;
+	
+	@FindBy(id = "days")
+	WebElement day;
+	
+	@FindBy(id = "months")
+	WebElement months;
 
-	By email3 = By.name("email_create");
-	By emailSubmit = By.name("SubmitCreate");
-	By gender = By.id("id_gender1");
-	By customerFName = By.id("customer_firstname");
-	By customerLName = By.id("customer_lastname");
-	By email2 = By.name("email");
-	By passwd = By.id("passwd");
-	By day = By.id("days");
-	By months = By.id("months");
-	By years = By.id("years");
-	By signNewsletter = By.id("newsletter");
-	By signOffer = By.id("optin");
-	By receiverFname = By.id("firstname");
-	By receiverLName = By.id("lastname");
-	By receiverCom = By.id("company");
-	By receiverAddr1 = By.id("address1");
-	By receiverAddr2 = By.id("address2");
-	By receiverCity = By.id("city");
-	By receiverState = By.id("id_state");
-	By receiverPostcode = By.id("postcode");
-	By receiverCountry = By.id("id_country");
-	By receiverInfo = By.id("other");
-	By receiverPhone1 = By.id("phone");
-	By receiverPhone2 = By.id("phone_mobile");
-	By receiverAlias = By.id("alias");
-	By regBtn = By.id("submitAccount");
+	@FindBy(id = "years")
+	WebElement years;
+	
+	@FindBy(id = "newsletter")
+	WebElement signNewsletter;
+	
+	@FindBy(id = "optin")
+	WebElement signOffer;
+	
+	@FindBy(id = "firstname")
+	WebElement receiverFname;
+	
+	@FindBy(id = "lastname")
+	WebElement receiverLName;
+	
+	@FindBy(id = "company")
+	WebElement receiverCom;
+	
+	@FindBy(id = "address1")
+	WebElement receiverAddr1;
 
-//	public void Register(WebDriver driver) {
-//
-//		this.driver = driver;
-//
-//	}
+	@FindBy(id = "address2")
+	WebElement receiverAddr2;
+
+	@FindBy(id = "city")
+	WebElement receiverCity;
+	
+	@FindBy(id = "id_state")
+	WebElement receiverState;
+	
+	@FindBy(id = "postcode")
+	WebElement receiverPostcode;
+	
+	@FindBy(id = "id_country")
+	WebElement receiverCountry;
+	
+	@FindBy(id = "other")
+	WebElement receiverInfo;
+	
+	@FindBy(id = "phone")
+	WebElement receiverPhone1;
+	
+	@FindBy(id = "phone_mobile")
+	WebElement receiverPhone2;
+	
+	@FindBy(id = "alias")
+	WebElement receiverAlias;
+	
+	@FindBy(id = "submitAccount")
+	WebElement regBtn;
+	
+	//PageFactory init element
+	public void setDriver(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
 	
 	// Case execution
-	public void register(String email1, String cusFName, String cusLName, String mail2, String pwd, String date,
+	public void register(String expTitle, String email1, String cusFName, String cusLName, String mail2, String pwd, String date,
 			String mon, String yr, String recFName, String recLName, String recCom, String recAddr1, String recAddr2,
 			String recCity, String recPcode, String recCountry, String recInfo, String recPhone1, String recPhone2,
 			String recAlias) {
-		this.setEmail1(email1);
-		this.clickCreate();
-		this.setCustomerFirstName(cusFName);
-		this.setCustomerLName(cusLName);
-		this.setCustomerEmail(mail2);
-		this.setPassword(pwd);
-		this.setPassword(pwd);
-		this.setDate(date);
-		this.setMonth(mon);
-		this.setYear(yr);
+		setEmail1(email1);
+		clickCreate();
+		selectTitleMr();
+		setCustomerFirstName(cusFName);
+		setCustomerLName(cusLName);
+//		setCustomerEmail(mail2);
+		setPassword(pwd);
+		setPassword(pwd);
+		setDate(date);
+		setMonth(mon);
+		setYear(yr);
 
-		this.signupNewsletter();
-		this.signOffer();
+		signupNewsletter();
+		signOffer();
 
-		this.setReceiverFname(recFName);
-		this.setReceiverLName(recLName);
-		this.setReceiverCom(recCom);
-		this.setRecAddr2(recAddr2);
-		this.setRecAddr2(recAddr2);
-		this.setCity(recCity);
-		this.setPostcode(recPcode);
-		this.setCountry(recCountry);
-		this.setInfo(recInfo);
-		this.setPhone1(recPhone1);
-		this.setPhone2(recPhone2);
-		this.setAlias(recAlias);
-		this.clickRegister();
+		setReceiverFname(recFName);
+		setReceiverLName(recLName);
+		setReceiverCom(recCom);
+		setRecAddr2(recAddr2);
+		setRecAddr2(recAddr2);
+		setCity(recCity);
+		setPostcode(recPcode);
+		setCountry(recCountry);
+		setInfo(recInfo);
+		setPhone1(recPhone1);
+		setPhone2(recPhone2);
+		setAlias(recAlias);
+		clickRegister();
 	}
 
 	//Action list
 	public void setEmail1(String email1) {
-		driver.findElement(email3).sendKeys(email1);
+		this.email3.sendKeys(email1);
 	}
 
 	public void clickCreate() {
-		driver.findElement(emailSubmit).click();
+		this.emailSubmit.click();
 	}
 
-	public void selectTitle() {
-		driver.findElement(gender).click();
+	public void selectTitleMr() {
+			this.gender1.click();
 	}
 
+	public void selectTitleMrs(){
+		
+	}
+	
 	public void setCustomerFirstName(String cusFName) {
-		driver.findElement(customerFName).sendKeys(cusFName);
+		this.customerFName.sendKeys(cusFName);
 	}
 
 	public void setCustomerLName(String cusLName) {
-		driver.findElement(customerLName).sendKeys(cusLName);
+		this.customerLName.sendKeys(cusLName);
 	}
 
-	public void setCustomerEmail(String mail2) {
-		driver.findElement(email2).sendKeys(mail2);
-	}
+//	public void setCustomerEmail(String mail2) {
+//		this.email2.sendKeys(mail2);
+//	}
 
 	public void setPassword(String pwd) {
-		driver.findElement(passwd).sendKeys(pwd);
+		this.passwd.sendKeys(pwd);
 	}
 
 	public void setDate(String date) {
-		new Select(driver.findElement(day)).selectByVisibleText(date);
+		new Select(this.day).selectByVisibleText(date);
 	}
 
 	public void setMonth(String mon) {
-		new Select(driver.findElement(months)).selectByVisibleText(mon);
+		new Select(this.months).selectByVisibleText(mon);
 	}
 
 	public void setYear(String yr) {
-		new Select(driver.findElement(years)).selectByVisibleText(yr);
+		new Select(this.years).selectByVisibleText(yr);
 	}
 
 	public void signupNewsletter() {
-		driver.findElement(signNewsletter).click();
+		this.signNewsletter.click();
 	}
 
 	public void signOffer() {
-		driver.findElement(signOffer).click();
+		this.signOffer.click();
 	}
 
 	public void setReceiverFname(String recFName) {
-		driver.findElement(receiverFname).sendKeys(recFName);
+		this.receiverFname.sendKeys(recFName);
 	}
 
 	public void setReceiverLName(String recLName) {
-		driver.findElement(receiverLName).sendKeys(recLName);
+		this.receiverLName.sendKeys(recLName);
 	}
 
 	public void setReceiverCom(String recCom) {
-		driver.findElement(receiverCom).sendKeys(recCom);
+		this.receiverCom.sendKeys(recCom);
 	}
 
 	public void setRecAddr1(String recAddr1) {
-		driver.findElement(receiverAddr1).sendKeys(recAddr1);
+		this.receiverAddr1.sendKeys(recAddr1);
 	}
 
 	public void setRecAddr2(String recAddr2) {
-		driver.findElement(receiverAddr2).sendKeys(recAddr2);
+		this.receiverAddr2.sendKeys(recAddr2);
 	}
 
 	public void setCity(String recCity) {
-		driver.findElement(receiverCity).sendKeys(recCity);
+		this.receiverCity.sendKeys(recCity);
 	}
 
 	public void setState(String recState) {
-		driver.findElement(receiverState).sendKeys(recState);
+		this.receiverState.sendKeys(recState);
 	}
 
 	public void setPostcode(String recPcode) {
-		driver.findElement(receiverPostcode).sendKeys(recPcode);
+		this.receiverPostcode.sendKeys(recPcode);
 	}
 
 	public void setCountry(String recCountry) {
-		driver.findElement(receiverCountry).sendKeys(recCountry);
+		this.receiverCountry.sendKeys(recCountry);
 	}
 
 	public void setInfo(String recInfo) {
-		driver.findElement(receiverInfo).sendKeys(recInfo);
+		this.receiverInfo.sendKeys(recInfo);
 	}
 
 	public void setPhone1(String recPhone1) {
-		driver.findElement(receiverPhone1).sendKeys(recPhone1);
+		this.receiverPhone1.sendKeys(recPhone1);
 	}
 
 	public void setPhone2(String recPhone2) {
-		driver.findElement(receiverPhone2).sendKeys(recPhone2);
+		this.receiverPhone2.sendKeys(recPhone2);
 	}
 
 	public void setAlias(String recAlias) {
-		driver.findElement(receiverAlias).sendKeys(recAlias);
+		this.receiverAlias.sendKeys(recAlias);
 	}
 
 	public void clickRegister() {
-		driver.findElement(regBtn).click();
+		this.regBtn.click();
 	}
 
 }
