@@ -71,7 +71,7 @@ public class ContactUs
     }
     public void selectFileUpload() throws AWTException
     {
-        StringSelection ss = new StringSelection("C:\\Users\\diuttm\\Desktop\\5_63647.jpg");
+        StringSelection ss = new StringSelection("C:\\Users\\diuttm\\git\\TSCSelenium06\\src\\test\\java\\com\\vsii\\tsc\\TSCSelenium06\\DiuTTM\\DataProvider\\5_63647.jpg");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
         //Paste the file's absolute path into the File name field of the File Upload dialog box
 

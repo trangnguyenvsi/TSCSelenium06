@@ -9,6 +9,8 @@ import org.testng.annotations.Test;
 import com.vsii.tsc.TSCSelenium06.DiuTTM.PageFactory.Register;
 
 public class Test_Register extends TestBase {
+    TestBase.test = TestBase.extent.startTest("Contac Success", "Contac Success");
+    TestBase.test.assignCategory("Category02");
 	Register Res= new Register();
 
 	@Test(priority=1,dataProvider = "dataRegisterSuccess")

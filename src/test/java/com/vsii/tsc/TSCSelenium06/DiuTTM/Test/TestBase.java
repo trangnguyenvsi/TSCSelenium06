@@ -27,9 +27,7 @@ public class TestBase {
 	 public static WebDriver driver;
 	 public static String urlBase;
 	 static ExtentReports extent;
-	    static ExtentTest test;
-	    
-
+	    static ExtentTest test;	    
 	@BeforeSuite
 	public void beforeClass() throws IOException {
 	    extent = com.vsii.tsc.TSCSelenium06.DiuTTM.DataProvider.ExtentManager.Instance();
