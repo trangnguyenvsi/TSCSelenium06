@@ -3,7 +3,9 @@ package com.vsii.tsc.TSCSelenium06.DiuTTM.Test;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
 import com.relevantcodes.extentreports.LogStatus;
 import com.vsii.tsc.TSCSelenium06.DiuTTM.PageFactory.Login_Page;
 
@@ -48,4 +50,9 @@ public class Login extends TestBase {
             }
          TestBase.test.log(LogStatus.INFO, TestBase.test.addScreenCapture(com.vsii.tsc.TSCSelenium06.DiuTTM.DataProvider.ExtentManager.CaptureScreen(TestBase.driver, "C:/Users/diuttm/workspace/Demo_testReport/report/LoginSuccess")));   
 	}
-}
+	  @AfterMethod
+	    public void tearDown() {
+	        TestBase.extent.endTest(TestBase.test);
+	        TestBase.extent.flush();
+	        
+}}
