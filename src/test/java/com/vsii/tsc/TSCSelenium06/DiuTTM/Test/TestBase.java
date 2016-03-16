@@ -109,6 +109,6 @@ public class TestBase {
 	@AfterSuite
     public void tear() {
         TestBase.extent.close();
-        driver.quit();
+        //driver.quit();
     }
 }

@@ -19,10 +19,7 @@ public class Login extends TestBase {
 		driver.get(urlBase + "index.php?controller=authentication");
 		lg.Login_Page(driver);
 		lg.Login(email,passwd);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-//		Assert.assertEquals(driver.findElement(By.xpath(".//*[@id='center_column']/p")).getText(),
-//				"Welcome to your account. Here you can manage all of your personal information and orders.");
-		//lg.clickLogout();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
 		if (TestBase.driver.findElement(By.xpath(".//*[@id='center_column']/p")).getText().contains("Welcome to your account. Here you can manage all of your personal information and orders")){
             TestBase.test.log(LogStatus.PASS, TestBase.driver.findElement(By.xpath(".//*[@id='center_column']/p")).getText() +  "contains"+ "Welcome to your account. Here you can manage all of your personal information and orders");
             }
@@ -31,17 +28,18 @@ public class Login extends TestBase {
                         + " doesn't contain " + "Welcome to your account. Here you can manage all of your personal information and orders");
             }
 		 TestBase.test.log(LogStatus.INFO, TestBase.test.addScreenCapture(com.vsii.tsc.TSCSelenium06.DiuTTM.DataProvider.ExtentManager.CaptureScreen(TestBase.driver, "C:/Users/diuttm/workspace/Demo_testReport/report/LoginSuccess")));	
+		lg.clickLogout();
 	}
 
-	//@Test(priority=1,dataProvider = "LoginFail")
+	@Test(priority=1,dataProvider = "LoginFail")
 	public void LoginFail(String email, String passwd) {
+	    TestBase.test = TestBase.extent.startTest("LoginFail", "Verify Login Fail");
+        TestBase.test.assignCategory("Category01");
 		driver.get(urlBase + "index.php?controller=authentication");
 		lg.Login_Page(driver);
 		lg.Login(email, passwd);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		//Assert.assertEquals(driver.getCurrentUrl(),
-				//"http://automationpractice.com/index.php?controller=authentication");
-		if (TestBase.driver.getCurrentUrl().contains("http://automationpractice.com/index.php?controller=authentication")){
+	if (TestBase.driver.getCurrentUrl().contains("http://automationpractice.com/index.php?controller=authentication")){
             TestBase.test.log(LogStatus.PASS, TestBase.driver.getCurrentUrl() +  "is "+ "http://automationpractice.com/index.php?controller=authentication");
             }
             else {
