@@ -9,32 +9,22 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.vsii.tsc.TSCSelenium06.DiuTTM.PagePatory.Homepage;
 
-public class Test_Search
+import com.vsii.tsc.TSCSelenium06.DiuTTM.PageFactory.Search;
+
+public class Test_Search extends TestBase
 {     
     WebDriver driver;
-    @BeforeClass
-        
-        public void setup(){
-     
-            driver = new FirefoxDriver();
-            
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-     
-            driver.get("http://automationpractice.com/index.php");
-     }
-  
         @Test(priority=0)
         public void Searchwithoutinputdata(){
-            Homepage hp = new Homepage(driver);
+            Search hp = new Search(driver);
             hp.search("");
             String act= driver.findElement(By.xpath(".//*[@id='center_column']/p")).getText();
             Assert.assertEquals(act, "Please enter a search keyword");
         }
         @Test(priority=1)
         public void SearchTrue(){
-            Homepage hp = new Homepage(driver);
+            Search hp = new Search(driver);
             hp.search("blouse");
             String act= driver.findElement(By.xpath(".//*[@id='center_column']/ul/li/div/div[2]/h5/a")).getText();
             Assert.assertEquals(act, "Blouse");

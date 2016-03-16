@@ -1,4 +1,4 @@
-package com.vsii.tsc.TSCSelenium06.DiuTTM.PagePatory;
+package com.vsii.tsc.TSCSelenium06.DiuTTM.PageFactory;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -6,6 +6,7 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,7 +15,6 @@ import org.openqa.selenium.support.ui.Select;
 
 public class ContactUs
 {  
- 
     WebDriver driver;
     @FindBy(id="email")
     WebElement email_contact;
@@ -28,7 +28,7 @@ public class ContactUs
     @FindBy(id="fileUpload")
     WebElement UploadBtn; 
     
-    @FindBy(id="id_contact")
+    @FindBy(name="id_contact")
     WebElement SubjHeading; 
     @FindBy(id="submitMessage")
     WebElement submitMessage; 
@@ -37,14 +37,15 @@ public class ContactUs
         
         this.driver = driver;
  
-        //This initElements method will create all WebElements
- 
         PageFactory.initElements(driver, this);
  
     }
+ 
     public void SetHeading(String StrHeading)
+   
     {
-        new Select(SubjHeading).selectByVisibleText(StrHeading);      
+      new Select(this.SubjHeading).selectByVisibleText(StrHeading);      
+
     }
     public void SetEmail(String StrEmail)
     {
