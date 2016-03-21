@@ -13,7 +13,7 @@ import org.testng.annotations.DataProvider;
 public class Data {
 	public static Object[][] getData(int sheetNumber) throws IOException {
 		String[][] object = null;
-		FileInputStream fileInputStream = new FileInputStream("./data/Data.xlsx");
+		FileInputStream fileInputStream = new FileInputStream("./data/Data.xls");
 		POIFSFileSystem fsFileSystem = new POIFSFileSystem(fileInputStream);
 		HSSFWorkbook workBook2 = new HSSFWorkbook(fsFileSystem);
 		HSSFSheet sheet = workBook2.getSheetAt(sheetNumber);
@@ -40,25 +40,25 @@ public class Data {
 	
 	@DataProvider
 	public static Object[][] dataRegisterSuccess() throws IOException {
-		Object[][] object = getData(0);
-		return object;
-	}
-
-	@DataProvider
-	public static Object[][] dataRegisterFail() throws IOException {
-		Object[][] object = getData(1);
-		return object;
-	}
-
-	@DataProvider
-	public static Object[][] LoginSucc() throws IOException {
 		Object[][] object = getData(2);
 		return object;
 	}
 
 	@DataProvider
-	public static Object[][] LoginFail() throws IOException {
+	public static Object[][] dataRegisterFail() throws IOException {
 		Object[][] object = getData(3);
+		return object;
+	}
+
+	@DataProvider
+	public static Object[][] LoginSucc() throws IOException {
+		Object[][] object = getData(0);
+		return object;
+	}
+
+	@DataProvider
+	public static Object[][] LoginFail() throws IOException {
+		Object[][] object = getData(1);
 		return object;
 	}
 }

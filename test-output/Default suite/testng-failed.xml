@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.vsii.tsc.TSCSelenium06.quyentx.tests.checkPurchaseDress">
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.Login">
         <methods>
-          <include name="afterSuite"/>
-          <include name="preTest"/>
-          <include name="purchaseDressValid"/>
           <include name="beforeClass"/>
+          <include name="LoginFail"/>
+          <include name="LoginSuccess"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.vsii.tsc.TSCSelenium06.quyentx.tests.checkPurchaseDress -->
+      </class> <!-- com.vsii.tsc.TSCSelenium06.Anhptq.test.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

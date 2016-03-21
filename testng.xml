@@ -3,24 +3,25 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.vsii.tsc.TSCSelenium06.DiuTTM.Test.TestBase"/>
-      <class name="com.vsii.tsc.TSCSelenium06.tranglt.Test.Login"/>
-      <class name="com.vsii.tsc.TSCSelenium06.lannt.Test.RegisTest"/>
-      <class name="com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckRegister"/>
-      <class name="com.vsii.tsc.TSCSelenium06.DiuTTM.Test.Test_login"/>
-      <class name="com.vsii.tsc.TSCSelenium06.lannt.Test.LoginTest"/>
-      <class name="com.vsii.tsc.TSCSelenium06.DiuTTM.Test.Test_register"/>
-      <class name="com.vsii.tsc.TSCSelenium06.tranglt.Test.TestBase"/>
-      <class name="com.vsii.tsc.TSCSelenium06.tranglt.Test.Register"/>
-      <class name="com.vsii.tsc.TSCSelenium06.AppTest"/>
-      <class name="com.vsii.tsc.TSCSelenium06.lannt.Test.SearchTest"/>
-      <class name="com.vsii.tsc.TSCSelenium06.DiuTTM.Test.Test_Contus"/>
-      <class name="com.vsii.tsc.TSCSelenium06.tranglt.Test.AddToCart"/>
-      <class name="com.vsii.tsc.TSCSelenium06.TC02"/>
-      <class name="com.vsii.tsc.TSCSelenium06.TC01"/>
-      <class name="com.vsii.tsc.TSCSelenium06.DiuTTM.Test.Test_Newletters"/>
-      <class name="com.vsii.tsc.TSCSelenium06.DiuTTM.Test.Test_Search"/>
-      <class name="com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin"/>
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.Login"/>
+<!--       <class name="com.vsii.tsc.TSCSelenium06.DiuTTM.Test.TestBase"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.tranglt.Test.Login"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.lannt.Test.RegisTest"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckRegister"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.DiuTTM.Test.Test_login"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.lannt.Test.LoginTest"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.DiuTTM.Test.Test_register"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.tranglt.Test.TestBase"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.tranglt.Test.Register"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.AppTest"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.lannt.Test.SearchTest"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.DiuTTM.Test.Test_Contus"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.tranglt.Test.AddToCart"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.TC02"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.TC01"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.DiuTTM.Test.Test_Newletters"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.DiuTTM.Test.Test_Search"/> -->
+<!--       <class name="com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

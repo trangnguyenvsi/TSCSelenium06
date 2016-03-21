@@ -1,46 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="2" failed="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7019" started-at="2016-03-15T10:48:43Z" finished-at="2016-03-15T10:48:51Z">
+  <suite name="Default suite" duration-ms="28" started-at="2016-03-21T03:00:11Z" finished-at="2016-03-21T03:00:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7019" started-at="2016-03-15T10:48:43Z" finished-at="2016-03-15T10:48:51Z">
-      <class name="com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@2d6e8792]" name="beforeClass" is-config="true" duration-ms="10902" started-at="2016-03-15T17:48:33Z" finished-at="2016-03-15T17:48:43Z">
+    <test name="Default test" duration-ms="28" started-at="2016-03-21T03:00:11Z" finished-at="2016-03-21T03:00:11Z">
+      <class name="com.vsii.tsc.TSCSelenium06.Anhptq.test.Login">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.vsii.tsc.TSCSelenium06.Anhptq.test.Login@1a6e353]" name="beforeClass" is-config="true" duration-ms="16202" started-at="2016-03-21T09:59:55Z" finished-at="2016-03-21T10:00:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="loginInvalid(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@2d6e8792]" name="loginInvalid" duration-ms="6384" started-at="2016-03-15T17:48:44Z" data-provider="loginInvalid" finished-at="2016-03-15T17:48:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Login - My Store]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[quyentx]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Password1]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="LoginFail(java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium06.Anhptq.test.Login@1a6e353]" name="LoginFail" duration-ms="0" started-at="2016-03-21T10:00:11Z" data-provider="LoginFail" finished-at="2016-03-21T10:00:11Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginFail(java.lang.String,java.lang.String) requires a @DataProvider named : LoginFail]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginFail(java.lang.String,java.lang.String) requires a @DataProvider named : LoginFail
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:263)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:419)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginInvalid -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@2d6e8792]" name="afterTest" is-config="true" duration-ms="1" started-at="2016-03-15T17:48:51Z" finished-at="2016-03-15T17:48:51Z">
+        </test-method> <!-- LoginFail -->
+        <test-method status="SKIP" signature="LoginSuccess(java.lang.String, java.lang.String)[pri:1, instance:com.vsii.tsc.TSCSelenium06.Anhptq.test.Login@1a6e353]" name="LoginSuccess" duration-ms="0" started-at="2016-03-21T10:00:11Z" data-provider="LoginSuccess" finished-at="2016-03-21T10:00:11Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginSuccess(java.lang.String,java.lang.String) requires a @DataProvider named : LoginSuccess]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void com.vsii.tsc.TSCSelenium06.Anhptq.test.Login.LoginSuccess(java.lang.String,java.lang.String) requires a @DataProvider named : LoginSuccess
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:263)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:419)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin@2d6e8792]" name="afterSuite" is-config="true" duration-ms="325" started-at="2016-03-15T17:48:51Z" finished-at="2016-03-15T17:48:51Z">
+        </test-method> <!-- LoginSuccess -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.vsii.tsc.TSCSelenium06.Anhptq.test.Login@1a6e353]" name="tearDown" is-config="true" duration-ms="1518" started-at="2016-03-21T10:00:11Z" finished-at="2016-03-21T10:00:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.vsii.tsc.TSCSelenium06.quyentx.tests.CheckLogin -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.vsii.tsc.TSCSelenium06.Anhptq.test.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

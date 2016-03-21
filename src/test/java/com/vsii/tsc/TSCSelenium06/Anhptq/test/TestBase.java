@@ -23,7 +23,7 @@ public class TestBase {
 	
 	public Properties readConfig() throws IOException {
 	// Create new properties variable
-//	Properties p = new Properties();
+	Properties p = new Properties();
 	// Read object properties file
 	InputStream stream = new FileInputStream("./properties/config.properties");
 	// Load input stream file
@@ -34,6 +34,10 @@ public class TestBase {
 	
 	@BeforeSuite
 	public void beforeClass() throws IOException {
+		Properties p = new Properties();
+		// Read object properties file
+		InputStream stream = new FileInputStream("./properties/config.properties");
+		p.load(stream);
 		String browser = p.getProperty("browserName");
 		urlBase=p.getProperty("base_url");
 		if (browser.equalsIgnoreCase("firefox")){
@@ -41,22 +45,22 @@ public class TestBase {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		}
-		else if (browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "./resource/chromedriver.exe");
-			driver = new ChromeDriver();
-			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		} else if (browser.equalsIgnoreCase("ie")) {
-			System.setProperty("webdriver.ie.driver", "./resource/IEDriverServer.exe");
-			driver = new InternetExplorerDriver();
-			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		}
+//		else if (browser.equalsIgnoreCase("chrome")) {
+//			System.setProperty("webdriver.chrome.driver", "./resource/chromedriver.exe");
+//			driver = new ChromeDriver();
+//			driver.manage().window().maximize();
+//			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		} else if (browser.equalsIgnoreCase("ie")) {
+//			System.setProperty("webdriver.ie.driver", "./resource/IEDriverServer.exe");
+//			driver = new InternetExplorerDriver();
+//			driver.manage().window().maximize();
+//			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		}
 	}
 	
 
 	@AfterSuite
 	public void tearDown() throws Exception {
-		// driver.quit();
+		driver.quit();
 	}
 }
